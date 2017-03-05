@@ -26,6 +26,14 @@
                 	<span class="fa fa-user"></span>Jan-Jan</a>
                 </li>
             </ul>
+            <div class="mobile">
+            	<a href="javascript:void(0);" onclick="displayNav();" class="mobile__navicon" id="navIcon"><span class="fa fa-plus"></span></a>
+            	<div class="display-none" id="mobileNav">
+            		<a href="#">Home</a>
+            		<a href="#">Archive</a>
+            		<a href="#">Add New Entry</a>
+            	</div>
+            </div>
         </div>
     </section>
     <section id="main-page">
