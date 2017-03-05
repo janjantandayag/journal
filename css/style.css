@@ -358,6 +358,9 @@ input, select {
     #mobileNav{
         display: none;
     }
+    #main-page{
+        opacity: 1;
+    }
 }
 @media screen and (max-width:992px){
     .top-nav__lists{
