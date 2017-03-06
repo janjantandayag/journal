@@ -15,7 +15,7 @@
 	                <a href="home.php" class="top-nav__list"><span class="fa fa-home"></span>Home</a>
                 </li>
                 <li>                	
-                	<a href="#" class="top-nav__list"><span class="fa fa-calendar"></span>Archive</a>
+                	<a href="archive.php" class="top-nav__list"><span class="fa fa-calendar"></span>Archive</a>
             	</li>
                 <li>
                 	<a href="add-entry.php" class="top-nav__list">
@@ -30,7 +30,7 @@
             	<a href="javascript:void(0);" onclick="displayNav();" class="mobile__navicon" id="navIcon"><span class="fa fa-plus"></span></a>
             	<div class="display-none" id="mobileNav">
             		<a href="home.php">Home</a>
-            		<a href="#">Archive</a>
+            		<a href="archive.php">Archive</a>
             		<a href="add-entry.php">Add New Entry</a>
             	</div>
             </div>

@@ -265,7 +265,7 @@ input, select {
     background: url(../img/banner.jpg) no-repeat center center fixed;
     background-size: cover;
 }
-.recentItems__heading,.addEntry__heading{
+.recentItems__heading,.addEntry__heading, .archive__heading{
     background:#dfab1f;
     color:#ffffff;
     font-size: 112.5%;
@@ -281,12 +281,16 @@ input, select {
     border-radius: 5px;
     margin-bottom: 20px;
 }
-.recentItem__img{
+.archive_result{
+    background-color:#fff;
+    margin-bottom: 10px;
+}
+.recentItem__img,.resultImg{
     max-width: 100%;
     padding: 10px;
     border-radius: 15px;
 }
-.recentItem__foodName{
+.recentItem__foodName,.result__foodName{
     font-family: hindLight;
     font-size: 150%;
     text-transform: uppercase;
@@ -296,7 +300,7 @@ input, select {
     color:#5d5234;
     border-bottom: 1px dotted #5d5234;
 }
-.recentItem__details{
+.recentItem__details,.result__details{
     color:#9d9276;
     font-size:120%;
     font-family: hindLight;
@@ -304,8 +308,31 @@ input, select {
     line-height: 160%;
     text-transform: uppercase;
 }
-.recentItem__details .fa{
+.recentItem__details .fa, .result__details .fa{
     margin-right:10px;
+}
+.archive__dateOption{
+    margin-bottom: 20px;
+    background:#fff;
+    padding: 20px 10px;
+    border-radius: 10px;
+}
+.dateOption{
+    height: 50px;
+}
+.preDateSelected{
+    font-family: hindLight;
+    color:#d3d1cc;
+    font-size: 110%;
+    font-style: italic;
+}
+.dateSelected{
+    color:#dfab1f;
+    font-family: hindBold;
+    font-size:120%;
+    display:inline-block;
+    margin-left:10px;
+    margin-top:15px;
 }
 .mobile__navicon{
     float:right;
@@ -462,7 +489,6 @@ input, select {
     transition: 1s all;
     text-decoration: none;
 }
-
 @media screen and (min-width:992px){
     #mobileNav{
         display: none;
@@ -505,6 +531,31 @@ input, select {
     .submitEntry:hover{
         color:#000000;
         border:1px solid #000000;
+    }
+    .archive_result img{
+        text-align: center;
+    }
+    .dateOption{
+        margin-bottom: 10px;
+    }
+    .dateSelected{
+        margin-top:5px;
+        margin-left: 0px;
+        width:100%;
+        background:#f5efde;
+        padding:15px 0;
+        text-align: center;
+    }
+    .archive__dateOption{
+        border-bottom: 3px dotted #dfab1f;     
+        border-radius: 0px;  
+    }
+    .archive_result{
+        border-bottom:1px solid #dfab1f;
+        border-radius: 5px;
+    }    
+    .archive_result:last-child{
+        margin-bottom: 0px;
     }
   #main-page{
     background:none;
@@ -573,6 +624,9 @@ input, select {
 }
 @media screen and (max-width:767px) and (min-width:426px){
     .recentItem{
+        text-align: center;
+    }
+    .archive_result img{
         text-align: center;
     }
 
