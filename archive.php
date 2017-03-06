@@ -56,7 +56,7 @@
                 </div>
             </div>
             <div class="archive_results">
-                <div class="row">
+                <div class="row archive_resultsRow">
                     <div class="col-md-6 col-sm-6 archive_result">
                         <div class="row">
                             <div class="col-md-6 col-sm-6">

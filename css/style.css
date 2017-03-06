@@ -275,11 +275,29 @@ input, select {
     text-align: center;
     margin-bottom: 20px;
 }
+.recentItems__heading{
+    display: inline-block;
+    padding:20px 10px;
+    margin-bottom: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
 .recentItem{
-    background:#f4e6c1;
-    border-top:5px solid #d6bc76;
-    border-radius: 5px;
+    border-top:5px solid #dfab1f;
     margin-bottom: 20px;
+    background:#fff;
+}
+.recentItem__hover{
+    background:#fff;
+    overflow:hidden;
+    padding-bottom: 25px;
+}
+.recentItem__hover:hover img{
+    transform: scale(1.1);
+    transition: all .5s;
+}
+.recentItemRow{
+    margin:0px;
 }
 .archive_result{
     background-color:#fff;
@@ -296,7 +314,7 @@ input, select {
     text-transform: uppercase;
     font-weight: bold;
     margin-top:10px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     color:#5d5234;
     border-bottom: 1px dotted #5d5234;
 }
@@ -311,11 +329,22 @@ input, select {
 .recentItem__details .fa, .result__details .fa{
     margin-right:10px;
 }
+.recentItem__foodName{
+    font-size: 105%;
+}
+.recentItem__details{
+    font-size:100%;
+    margin-left: 0px;
+}
 .archive__dateOption{
-    margin-bottom: 20px;
     background:#fff;
     padding: 20px 10px;
-    border-radius: 10px;
+}
+.archive_results{
+    background:#fff;
+}
+.archive_resultsRow{
+    margin:0px;
 }
 .dateOption{
     height: 50px;
@@ -384,7 +413,6 @@ input, select {
 /* ADD ENTRY */
 .addEntry__step{
     background: #ffffff;
-    margin-bottom: 20px;
     padding: 10px;
 }
 .step1__num,.step2__num,.step3__num{
@@ -489,6 +517,19 @@ input, select {
     transition: 1s all;
     text-decoration: none;
 }
+.barChart{
+    min-height: 500px;
+    width: 100%;
+}
+.visualization{
+    margin-top:20px;
+    margin-bottom: 30px;
+    border-top:5px solid #dfab1f;
+}    
+.archive_result:hover img{
+    transform: scale(1.1);
+    transition: all .5s;
+}
 @media screen and (min-width:992px){
     #mobileNav{
         display: none;
@@ -528,6 +569,21 @@ input, select {
     }
 }
 @media screen and (max-width:425px){
+    .visualization{
+        border-top:0px;
+        margin-top: 0px;
+    }
+    .recentItems__heading{
+        border-radius: 0px;
+        display: block;
+    }
+    .recentItem{
+        border-top:0px;
+    }
+    .recentItem__hover{
+        margin:10 0px;
+        border-bottom: 3px dotted #dfab1f;
+    }
     .submitEntry:hover{
         color:#000000;
         border:1px solid #000000;
@@ -630,6 +686,26 @@ input, select {
         text-align: center;
     }
 
+    .recentItem__hover{
+        margin:10 0px;
+        border-bottom: 3px dotted #dfab1f;
+    }
+    .recentItem__foodName{
+        border-bottom: 0px;
+        font-size:120%;
+    }
+    .archive_result{
+        text-align:center;
+    }
+    .result__foodName{
+        border-bottom: 0px;
+    }
+}
+
+.archive_result{
+    overflow: hidden;
+    background:#fff;
+    min-height: 250px;
 }
 
 
