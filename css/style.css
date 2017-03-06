@@ -265,7 +265,7 @@ input, select {
     background: url(../img/banner.jpg) no-repeat center center fixed;
     background-size: cover;
 }
-.recentItems__heading{
+.recentItems__heading,.addEntry__heading{
     background:#dfab1f;
     color:#ffffff;
     font-size: 112.5%;
@@ -354,6 +354,115 @@ input, select {
 .display-none{
     display: none;
 }
+/* ADD ENTRY */
+.addEntry__step{
+    background: #ffffff;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.step1__num,.step2__num,.step3__num{
+    font-family: hindLight;
+    font-size: 200%;
+    color:#ffffff;
+    background: #dfab1f;
+    padding: 15px;
+    display: inline-block;
+}
+.step1__name,.step2__name,.step3__name{
+    font-family: hindBold;
+    color:#716b5c;
+    text-transform: uppercase;
+    font-size: 112.5%;
+    display: inline-block;
+    padding-bottom: 10px;
+    border-bottom: 3px dotted #716b5c;
+}
+.step1__circumplex{
+    display: block;
+    width: 100%;
+}
+.step1__emotion{
+    text-align: center;
+    padding:50px;
+}
+.step1__head{
+    font-family: hindLight;
+    font-size: 220%;
+    color:#b9b8b4;
+}
+.step1__selected{
+    text-transform: uppercase;
+    font-family: montserratBold;
+    color:#dfab1f;
+    font-size: 220%;
+    margin-top:50px;
+}
+.step2__nameButtons{
+    padding:0 30px;
+}
+.step2__nameButtons input[type='text']{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    height:60px;
+}
+.step2__nameButtons input[type='file']{
+    display: none;
+}
+.custom-file-select,.custom-file-take{
+    cursor: pointer;
+    padding:20px;
+    font-family: hindLight;
+    font-size: 100%;
+    margin-bottom: 30px;
+}
+.custom-file-take{
+    background:#878273;
+    color:#fffffe;
+}
+.custom-file-select{
+    color:#000000;
+    background:#cac8c2;
+}
+.step2__imgpreview{
+    max-width: 200px;
+    width:100%;
+    border-radius: 10px;
+}
+.step3__note{
+    color:#aea89a;
+    font-family: hindLight;
+    font-size:100%;
+    font-style: italic;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+.dateTaken{
+    height:60px;
+}
+.submitEntrySection{
+    text-align: center;
+}
+.submitEntry{
+    color:#543f05;
+    background:#efb61c;
+    display: inline-block;
+    font-family: hindLight;
+    font-size: 112.5%;
+    display: inline-block;
+    padding:20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 50px;
+    border:1px solid transparent;
+}
+.submitEntry:hover{
+    background: transparent;
+    color:#ffffff;
+    border:1px solid #ffffff;
+    transition: 1s all;
+    text-decoration: none;
+}
+
 @media screen and (min-width:992px){
     #mobileNav{
         display: none;
@@ -378,8 +487,28 @@ input, select {
     .mobile__navicon{
         display: block;
     }
+    .step1__selected{
+        font-size:125%;
+        margin-top:10px;
+    }
+    .step1__head{
+        font-size: 100%;
+    }
+    .step1__circumplex{
+        display: block;
+        margin: 0 auto;
+        width:100%;
+        max-width:400px;
+    }
 }
 @media screen and (max-width:425px){
+    .submitEntry:hover{
+        color:#000000;
+        border:1px solid #000000;
+    }
+  #main-page{
+    background:none;
+  }
   .recentItem__details{
     margin-left:0px;
   }
@@ -391,7 +520,7 @@ input, select {
     margin-bottom: 0px;
     border-top-width: 20px;
   }
-  .recentItems__heading{
+  .recentItems__heading,.addEntry__heading{
     margin-bottom: 0px;
   }
   #main-page .container{
@@ -400,14 +529,53 @@ input, select {
   #main-page .row{
     margin:0px;
   }
+  #main-page .col-md-12{
+    padding:0px;
+  }
+  .step1__emotion{
+    padding:0px;
+    text-align: left;
+    margin-top:10px;
+  }
+  .step1__head{
+    font-size: 150%;
+  }
+  .custom-file-select{
+    margin-left:-px;
+  }
+  .step1__selected{
+    margin-top: 10px;
+    font-size:150%;
+    background:#fcd66f;
+    color:#674f0f;
+    padding:10px 0;
+    text-align: center;
+  }
+  .custom-file-select,.custom-file-take{
+    width:50%;
+  }
+    .custom-file-select{
+        margin-left:-10px;
+    }
+  .addEntry__step{
+    margin-bottom: 0px;
+    border-bottom: 5px dotted #000000;
+  }
+
   .recentItems__header .col-md-12{
     padding:0px;
+  }
+  .submitEntry{
+    display: block;
+    margin-top:20px;
+    margin-bottom: 20px;
   }
 }
 @media screen and (max-width:767px) and (min-width:426px){
     .recentItem{
         text-align: center;
     }
+
 }
 
 
